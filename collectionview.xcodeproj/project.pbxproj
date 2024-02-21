@@ -16,6 +16,7 @@
 		74409AB22B85FF8700CE2E29 /* collectionviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74409AB12B85FF8700CE2E29 /* collectionviewTests.swift */; };
 		74409ABC2B85FF8700CE2E29 /* collectionviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74409ABB2B85FF8700CE2E29 /* collectionviewUITests.swift */; };
 		74409ABE2B85FF8700CE2E29 /* collectionviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74409ABD2B85FF8700CE2E29 /* collectionviewUITestsLaunchTests.swift */; };
+		74409ACB2B8604C700CE2E29 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74409ACA2B8604C700CE2E29 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		74409AB72B85FF8700CE2E29 /* collectionviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = collectionviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74409ABB2B85FF8700CE2E29 /* collectionviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionviewUITests.swift; sourceTree = "<group>"; };
 		74409ABD2B85FF8700CE2E29 /* collectionviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		74409ACA2B8604C700CE2E29 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				74409AA32B85FF8700CE2E29 /* Assets.xcassets */,
 				74409AA52B85FF8700CE2E29 /* LaunchScreen.storyboard */,
 				74409AA82B85FF8700CE2E29 /* Info.plist */,
+				74409ACA2B8604C700CE2E29 /* CollectionViewCell.swift */,
 			);
 			path = collectionview;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				74409A9F2B85FF8600CE2E29 /* ViewController.swift in Sources */,
 				74409A9B2B85FF8600CE2E29 /* AppDelegate.swift in Sources */,
+				74409ACB2B8604C700CE2E29 /* CollectionViewCell.swift in Sources */,
 				74409A9D2B85FF8600CE2E29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
