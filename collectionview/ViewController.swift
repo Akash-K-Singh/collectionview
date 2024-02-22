@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  collectionview
-//
-//  Created by Shruti Makwana on 21/02/24.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -41,6 +34,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //to use a custom class
+        cvProduct.register(CollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         // Do any additional setup after loading the view.
     }
 }
@@ -52,16 +47,15 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cvProduct.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
-//        cell.ivProduct.image = UIImage(named: productImage[indexPath.row]);
-//        cell.lblProduct.text = productName[indexPath.row];
-        cell.layer.backgroundColor = UIColor.blue.cgColor;
-        
-        return cell;
+        cell.ivProduct.image = UIImage(named: productImage[indexPath.row])
+        cell.lblProduct.text = productName[indexPath.row]
+        cell.contentView.backgroundColor = UIColor.blue
+        return cell
     }
     
-    override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
-        let size = (cvProduct.frame.size.width-20)/2;
-        return CGSize(width: size, height: size);
-    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = (collectionView.frame.size.width - 120) / 2 // Adjust the width as needed
+        return CGSize(width: 150, height: 110) // Set both width and height to maintain a square cell
+        }
 }
 
